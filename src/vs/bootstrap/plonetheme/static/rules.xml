@@ -16,6 +16,9 @@
             <link rel="stylesheet" type="text/css" media="screen" href="/++resource++tinymce.stylesheets/tinymce.css" />
             <script type="text/javascript" src="/tiny_mce.js"></script>
             <script type="text/javascript" src="/tiny_mce_init.js"></script>
+            <script type="text/javascript" src="portal_javascripts/Sunburst%20Theme/++resource++plone.app.jquery.js"></script>
+            <script type="text/javascript" src="portal_javascripts/Sunburst%20Theme/++resource++xmldirector.plonecore/ace-builds/src-min/ace.js"></script>
+            <script type="text/javascript" src="portal_javascripts/Sunburst%20Theme/++resource++xmldirector.plonecore/local.js"></script>
         </after>
         <after css:theme-children="html head"
                css:content="html head meta" />
@@ -144,10 +147,7 @@
               css:if-not-content=".documentDescription" />
 
         <!-- Document Byline-->
-        <replace css:content-children=".documentByLine"
-                 css:theme-children=".documentByLine" />
-        <drop css:theme=".documentByLine"
-              css:if-not-content=".documentByLine" />
+        <drop css:content=".documentByLine"/>
 
         <!-- Link to presentation -->
         <replace css:content-children="#link-presentation"
