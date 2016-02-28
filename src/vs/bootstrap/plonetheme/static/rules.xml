@@ -155,17 +155,12 @@
         <drop css:theme="#link-presentation"
               css:if-not-content="#link-presentation" />
 
-          <!-- Alerts -->
-        <!--
-        <replace css:content-children="#content dl.info dt"
-                 css:theme-children=".alert-block h4"
-                 css:if-content="#content dl.info dt"  />
-        <replace css:content-children="#content dl.info dd"
+         <!-- Alerts -->
+        <replace css:content-children="dl.info dd"
                  css:theme-children=".alert-block p"
-                 css:if-content="#content dl.info dd" />
+                 css:if-content="dl.info dd" />
         <drop css:theme=".alert-block"
-              css:if-not-content="#content dl.info" />
-        -->
+                css:if-not-content="dl.info dd" />
 
         <!-- Content body -->
         <replace css:content-children="#content-core"
@@ -201,11 +196,6 @@
         <drop css:theme="div.listingBar a.next"
               css:if-not-content="ul.pager a.next" />
 
-        <!-- Footer -->
-        <replace css:theme-children=".modal-footer .container .copyright"
-                 css:content-children="#portal-footer p" />
-        <replace css:theme-children=".modal-footer .container ul.footer-links"
-                 css:content-children="#portal-siteactions" />
 
         <!-- Analytics -->
         <after css:theme=".modal-footer"
