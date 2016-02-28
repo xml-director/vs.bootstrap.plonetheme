@@ -155,7 +155,8 @@
         <drop css:theme="#link-presentation"
               css:if-not-content="#link-presentation" />
 
-        <!-- Alerts -->
+          <!-- Alerts -->
+        <!--
         <replace css:content-children="#content dl.info dt"
                  css:theme-children=".alert-block h4"
                  css:if-content="#content dl.info dt"  />
@@ -164,6 +165,7 @@
                  css:if-content="#content dl.info dd" />
         <drop css:theme=".alert-block"
               css:if-not-content="#content dl.info" />
+        -->
 
         <!-- Content body -->
         <replace css:content-children="#content-core"
