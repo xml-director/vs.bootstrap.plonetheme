@@ -14,6 +14,7 @@
                  css:content="html head title" />
         <after css:theme-children="html head" >
             <link rel="stylesheet" type="text/css" media="screen" href="/++resource++tinymce.stylesheets/tinymce.css" />
+            <link rel="stylesheet" type="text/css" href="++resource++vs.bootstrap.plonetheme/styles.css"/>
             <script type="text/javascript" src="/tiny_mce.js"></script>
             <script type="text/javascript" src="/tiny_mce_init.js"></script>
             <script type="text/javascript" src="portal_javascripts/Sunburst%20Theme/++resource++plone.app.jquery.js"></script>
@@ -155,7 +156,7 @@
         <drop css:theme="#link-presentation"
               css:if-not-content="#link-presentation" />
 
-         <!-- Alerts -->
+        <!-- Alerts -->
         <replace css:content-children="dl.info dd"
                  css:theme-children=".alert-block p"
                  css:if-content="dl.info dd" />
