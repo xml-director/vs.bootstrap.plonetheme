@@ -229,6 +229,7 @@
                  css:content-children="body.template-overview-controlpanel #content"
                  css:if-content="" />
 
+        <drop css:content="div.actions" />
     </rules>
 
     <xi:include href="edit.xml" />
